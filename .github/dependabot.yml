@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@types/pg"
+    versions:
+    - 7.14.10
+    - 7.14.9
+  - dependency-name: pg
+    versions:
+    - 8.5.1
+  - dependency-name: "@types/ejs"
+    versions:
+    - 3.0.5
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
